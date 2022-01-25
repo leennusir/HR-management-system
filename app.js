@@ -26,6 +26,7 @@ function Employee (employeeID , fullName , department, level  ){
     this.department = departments[department];
     this.level = levels[level] ;
     this.image = `./images/${this.fullName}.png`;
+    arrayOfObject.push(this);
 
 }
 Employee.prototype.getSalary = function(){
@@ -45,9 +46,10 @@ Employee.prototype.netSalary = function(){
 }
 
 Employee.prototype.render = function(){
-    document.write(`${this.fullName +" "+ this.getSalary()}`);
+    document.writeln(`${this.fullName +" "+ this.getSalary()}`+'</br>');
 }
- //objects
+ //
+ let arrayOfObject = []
  let obj1 = new Employee(1000,"Ghazi Samer","Administration","Senior");
  let obj2 = new Employee(1001,"Lana Ali","Finance","Senior");
  let obj3 = new Employee(1002,"Tamara Ayoub","Marketing","Mid-Senior");
@@ -55,8 +57,11 @@ Employee.prototype.render = function(){
  let obj5 = new Employee(1004,"Omar Zaid","Development","Senior");
  let obj6 = new Employee(1005,"Rana Saleh","Development","Junior");
  let obj7 = new Employee(1006,"Hadi Ahmad","Finance","Mid-Senior");
+console.log(arrayOfObject);
+ for( let i = 0  ; i<arrayOfObject.length ; i++){
+    arrayOfObject[i].render();
+    
+
+ }
 
  
-obj1.getSalary();
-obj1.netSalary();
-obj1.render();

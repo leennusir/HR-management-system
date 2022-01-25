@@ -30,7 +30,11 @@
     color: rgb(19, 18, 18);
   }
   
-   footer{ text-align: center;
+   footer{ 
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    text-align: center;
       background-color: rgb(182, 177, 177);
       padding: 1px;
       width: 1500px;}
