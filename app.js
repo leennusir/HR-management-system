@@ -57,11 +57,29 @@ Employee.prototype.render = function(){
  let obj5 = new Employee(1004,"Omar Zaid","Development","Senior");
  let obj6 = new Employee(1005,"Rana Saleh","Development","Junior");
  let obj7 = new Employee(1006,"Hadi Ahmad","Finance","Mid-Senior");
-console.log(arrayOfObject);
- for( let i = 0  ; i<arrayOfObject.length ; i++){
-    arrayOfObject[i].render();
-    
 
- }
+ function generateId(){
+    var val = Math.floor(1000 + Math.random() * 9000);
+    return val;
+}
+
+let form = document.getElementById("formAddEmplpyee");
+console.log(form);
+let employees = document.getElementById("employees");
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+let id = generateId();
+let fullName = event.target.fullName.value;
+let department =  event.target.departments.value;
+let level = event.target.levels.value;
+let newEmployee = new Employee(id,fullName,department,level);
+const div = document.createElement('div');
+div.className = 'card';
+div.innerHTML = `
+<img width="50" height="50" src="https://img.lovepik.com/original_origin_pic/19/01/17/ffea3ab99d95aca466f5c9f3ccb6a7f3.png_wh300.png" > <h1>${newEmployee.fullName}</h1><p class="title">${newEmployee.department}</p><p>${newEmployee.level}</p>  `;
+
+console.log(newEmployee);
+employees.appendChild(div);
+});
 
  
