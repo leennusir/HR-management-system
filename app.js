@@ -58,6 +58,7 @@ Employee.prototype.render = function(){
  let obj6 = new Employee(1005,"Rana Saleh","Development","Junior");
  let obj7 = new Employee(1006,"Hadi Ahmad","Finance","Mid-Senior");
 console.log(arrayOfObject);
+
  for( let i = 0  ; i<arrayOfObject.length ; i++){
     arrayOfObject[i].render();
     
