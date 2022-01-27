@@ -3,6 +3,7 @@
      overflow: hidden; 
      text-align: center;
      position: relative;
+     width: 100%;
   }
 
   .header-nav a {
@@ -12,6 +13,7 @@
     padding: 50px 16px;
     text-decoration: none;
     font-size: 17px;
+    width: 100%;
    
   }
 
@@ -24,6 +26,7 @@
     margin: 10px;
     padding: 10px;
     font-size: 30px;
+    width: 100%;
   }
   .header-nav a.active {
     background-color:orange;
@@ -37,6 +40,34 @@
     text-align: center;
       background-color: rgb(182, 177, 177);
       padding: 1px;
-      width: 1500px;}
+      width: 100%;}
+
+      /* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 250px;
+        height: 350px;
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .container {
+        padding: 2px 16px;
+      }
+
+
+    
 
     

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style/index.css">
 </head>
 <body>
-    <script src="./app.js"></script>
+    
     <nav class="header-nav" >
         <a class="active" href="index.html">Home</a>
          <a  href="accounting.html">accounting</a>
@@ -21,6 +21,40 @@
 
 </header>
 <main>
+    <form id="FormAddUser">
+        <label for="fullname">Full name:</label><br>
+        <input type="text" id="fullname" name="fullname" ><br>
+        <br>
+
+        <label for="Department">Department:</label><br>
+        <select name ="Department" id ="Department">
+            <option value="Administration">Administration</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Development">Development</option>
+            <option value="Finance">Finance</option>
+        </select>
+        <br>
+        <br>
+        <label for="Level">Level:</label><br>
+        <select name ="Level" id ="Level ">
+            <option value="Junior">Junior</option>
+            <option value="Mid-Senior">Mid-Senior</option>
+            <option value="Senior">Senior</option>
+        </select>
+        <br>
+        <br>
+        <label for="image">Add URL Image:</label><br>
+        <input type="text" name="userImage">
+        <br>
+        <br>
+        <input type="submit" value="Add user">
+      </form> 
+
+     
+      <div id = "employee">
+       
+      </div>
+<script src="./app.js"></script>
 
 
 </main>
