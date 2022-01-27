@@ -99,6 +99,13 @@ function generateEmployee(FullName , department , level , image){
     this.image = image;
     this.employeeIdNumber = employeeIdNumber();
     arrayOfObject.push(this);
+    var retrievedObject = localStorage.getItem('arrayOfObjectlocalStorage');
+    var r = JSON.parse(retrievedObject);
+    for(let i = 0 ; i < r.length ; i++){
+        arrayOfObject.push(r[i]);
+    }
+    localStorage.setItem('arrayOfObjectlocalStorage', JSON.stringify(arrayOfObject));
+
 }
  
 generateEmployee.prototype.render = function(){

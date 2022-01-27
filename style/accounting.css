@@ -1,40 +1,63 @@
 .header-nav {
-    background-color:rgb(182, 177, 177);
-     overflow: hidden; 
-     text-align: center;
-     position: relative;
-  }
+  background-color:rgb(182, 177, 177);
+   overflow: hidden; 
+   text-align: center;
+   position: relative;
+}
 
-  .header-nav a {
-  
-    color: #030303;
-    text-align: center;
-    padding: 50px 16px;
-    text-decoration: none;
-    font-size: 17px;
-   
-  }
+.header-nav a {
 
-  .flex-container {
-    display: flex;
-  }
+  color: #030303;
+  text-align: center;
+  padding: 50px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
   
-  .flex-container > div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+.header-nav a.active {
+  background-color:orange;
+  color: rgb(19, 18, 18);
+}
+
+ footer{ 
+  position: fixed;
+  left: 0;
+  bottom: 0; 
+  text-align: center;
+    background-color: rgb(182, 177, 177);
+    padding: 1px;
+    width: 100%;}
+
+    #departments {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
     
-    margin: 10px;
-    padding: 10px;
-    font-size: 30px;
-  }
-  .header-nav a.active {
-    background-color:orange;
-    color: rgb(19, 18, 18);
-  }
-  
-   footer{ 
-    position: fixed;
-    left: 0;
-    bottom: 0; 
-    text-align: center;
-      background-color: rgb(182, 177, 177);
-      padding: 1px;
-      width: 100%;}
+    #departments td, #departments th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #departments tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #departments tr:hover {background-color: #ddd;}
+    
+    #departments th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
