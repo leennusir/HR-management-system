@@ -100,6 +100,7 @@ function generateEmployee(FullName , department , level , image){
     this.employeeIdNumber = employeeIdNumber();
     arrayOfObject.push(this);
 }
+ 
 generateEmployee.prototype.render = function(){
     let employee = document.getElementById("employee");
     let card = document.createElement("div");
